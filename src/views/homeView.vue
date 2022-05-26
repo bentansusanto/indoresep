@@ -20,13 +20,16 @@
 
 <!-- Reward Section -->
     <secReward :ratings="reward"/>
+    <secAbout :abouts="about"/>
 
 </template>
 <script>
 import secReward from '../home-section/secReward.vue'
+import secAbout from '../home-section/secAbout.vue'
 export default {
     components : {
         secReward,
+        secAbout
     },
     data(){
         return{
@@ -50,8 +53,12 @@ export default {
                     desc : 'Website kami sudah mendapat rating diatas 4,5.',
                     image : 'https://img.icons8.com/external-flatart-icons-outline-flatarticons/50/364BA0/external-reward-shopping-and-ecommerce-flatart-icons-outline-flatarticons.png'
                 },
-
-            ]
+            ],
+            about : {
+                head : 'About Us',
+                content : ['Sans trip adalah website yang menyediakan info mengenai destinasi paling populer di Batam dan juga makanan yang paling sering di cari orang.','Kami juga memberikan info resep-resep dari makanan yang paling dicari orang. Sehingga anda dapat mencoba sendiri di rumah.'],
+                image : require('../assets/img-home/bg-about.png')
+            }
         }
     }
 }
