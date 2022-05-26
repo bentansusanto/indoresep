@@ -1,8 +1,31 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
+import homeView from '../views/homeView'
+import aboutView from '../views/aboutView'
+import foodView from '../views/foodView'
+import tripView from '../views/tripView'
 
 const routes = [
-
+    {
+      path : '/',
+      name : 'Homepage',
+      component : homeView 
+    },
+    {
+      path : '/about',
+      name : 'Tentang Kami',
+      component : aboutView 
+    },
+    {
+      path : '/food',
+      name : 'Makanan Khas Batam',
+      component : foodView 
+    },
+    {
+      path : '/trip',
+      name : 'Destinasi Terbaik Di Batam',
+      component : tripView 
+    }
 ]
 
 const router = createRouter({
