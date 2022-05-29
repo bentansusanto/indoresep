@@ -8,10 +8,10 @@
                 <div class="col-3 col-md-4 w-50">
                     <a class="btn" href="#">Contact Us</a>
                 </div>
-                <div class="col-2 col-md-2">
+                <div class="col-2 col-md-2 mt-4">
                     <a href=""><img :src="social"></a>
                 </div>
-                <div class="col-3 col-md-4">
+                <div class="col-3 col-md-4 mt-4">
                     <a  href=""><img :src="social1"></a>
                 </div>  
             </div>   
