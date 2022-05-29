@@ -4,7 +4,7 @@
                 <div class="col-12 col-md-5">
                     <img :src="abouts.image">
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 about1">
                     <h2>{{abouts.head}}</h2>
                     <p>{{abouts.content[0]}}</p>
                     <p>{{abouts.content[1]}}</p>
@@ -52,10 +52,14 @@ export default {
         }
         .about p{
             font-size: .9rem;
-            width: 100%;
+            width: 90%;
         }
         .about p:nth-child(2){
             padding-top: 20px;
+        }
+        .about1{
+            text-align: unset;
+            margin-left: -30px;
         }
     }
     /* Tablet and Desktop */
@@ -77,11 +81,19 @@ export default {
         .about p:nth-child(2){
             padding-top: 20px;
         }
+        .about1{
+            text-align: unset;
+            margin-left: unset;
+        }
     }
     /* Handphone */
     @media only screen and (max-width: 767px){
         .about img{
             width: 80%;
+        }
+        .about1{
+            text-align: center;
+            margin-left: unset;
         }
         .about h2, .about p{
             text-align: center;
@@ -97,5 +109,6 @@ export default {
         .about p:nth-child(2){
             padding-top: 20px;
         }
+        
     }
 </style>

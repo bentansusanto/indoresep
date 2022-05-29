@@ -18,18 +18,23 @@
         </div>
     </div>
 
-<!-- Reward Section -->
-    <secReward :ratings="reward"/>
     <secAbout :abouts="about"/>
+    <secReward :ratings="reward"/>
+    <secDestinasi :destinasis="destinasi"/>
+    <div class="pattern"></div>
 
 </template>
 <script>
 import secReward from '../home-section/secReward.vue'
 import secAbout from '../home-section/secAbout.vue'
+import secDestinasi from '../home-section/secDestinasi.vue'
+
 export default {
     components : {
         secReward,
-        secAbout
+        secAbout,
+        secDestinasi,
+    
     },
     data(){
         return{
@@ -58,7 +63,33 @@ export default {
                 head : 'About Us',
                 content : ['Sans trip adalah website yang menyediakan info mengenai destinasi paling populer di Batam dan juga makanan yang paling sering di cari orang.','Kami juga memberikan info resep-resep dari makanan yang paling dicari orang. Sehingga anda dapat mencoba sendiri di rumah.'],
                 image : require('../assets/img-home/bg-about.png')
-            }
+            },
+            destinasi : [
+                {
+                    title : 'Batam Snorkling',
+                    image : require('../assets/img-home/foto.jpg')
+                },
+                {
+                    title : 'Batam Surfing',
+                    image : require('../assets/img-home/foto1.jpg')
+                },
+                {
+                    title : 'Batam Go cart',
+                    image : require('../assets/img-home/foto2.jpg')
+                },
+                {
+                    title : 'Jembatan Barelang',
+                    image : require('../assets/img-home/foto3.jpg')
+                },
+                {
+                    title : 'Batam Cake',
+                    image : require('../assets/img-home/foto4.jpg')
+                },
+                {
+                    title : 'Beach Batam',
+                    image : require('../assets/img-home/foto5.jpg')
+                },
+            ]
         }
     }
 }
@@ -104,7 +135,14 @@ export default {
         border-radius: 5px;
         border: none;
     }
-
+    .pattern{
+        background: url('../assets/img-home/pattern.png');
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        height: 100px;
+        margin: 200px 0;
+    }
     /* Large Desktop */
     @media only screen and (min-width: 1025px){
         .hero{

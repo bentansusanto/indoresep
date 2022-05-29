@@ -25,6 +25,10 @@ export default {
     .reward{
         text-align: center;
     }
+    .reward p{
+        color: #a4a4a4;
+        font-size: .9rem;
+    }
 
     /* Large Desktop */
     @media only screen and (min-width: 1025px){
